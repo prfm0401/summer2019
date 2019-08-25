@@ -1,0 +1,13 @@
+<h1><%= @manage.title %>を編集</h1>
+
+
+<form action="/manage/<%= @manage.id %>" method="MANAGE">
+    <label>タイトル</label>
+    <input type="text" name="title" value="<% @manage.title %>"/>
+
+    <label>内容</label>
+    <textarea name="body"><%= @manage.body %></textarea>
+
+    <input type="hidden" name="_method" value="PUT">
+    <input type="submit" value="投稿"/>
+</form>

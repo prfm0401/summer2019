@@ -1,0 +1,6 @@
+development:
+  adapter: mysql2
+  database: sinatra-template
+  username: kobatake
+  password: perfume
+  encoding: utf8
